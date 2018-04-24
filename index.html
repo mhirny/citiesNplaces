@@ -10,18 +10,22 @@
 	
 <header>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+		<div class="container" id="headerNav">
+
 			<div class="navbar-header">
-				<img id="headerIcon" src="img/CiP2.png" alt="Cities & Places">
+        <a href="html/home.html" id="openHome" class="displayBlock">   
+          <img id="headerIcon" src="img/CnP.png" alt="Cities & Places">
+        </a>
 				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
 					<span class = "icon-bar"></span>
 					<span class = "icon-bar"></span>
 					<span class = "icon-bar"></span>
 				</button>
-			</div>		
+			</div>
+
 			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class="nav navbar-nav" id="headerNav">
-					<li><a href="html/home.html" id="openHome">Home</a>
+				<ul class="nav navbar-nav">
+					<!--<li><a href="html/home2.html" id="openHome">Home</a>-->
 					<li><a href="html/wroclaw.html" id="openWroclaw">Wroclaw</a>
 					<li><a href="html/paris.html" id="openParis">Paris</a>
 					<li><a href="html/prague.html" id="openPrague">Prague</a>
@@ -30,14 +34,15 @@
 					<li><a href="html/rome.html" id="openRome">Rome</a>
 				</ul>
 			</div>
+      
 		</div>
 	</nav>
 </header>
 
-<div id="contentWraper">
-	<main id="contentContainer" class="container col-sm-12"  data-spy="scroll" data-target="#myScrollspy" data-offset="30">
-	</main>
-</div>
+<main id="contentWraper">
+	<div id="contentContainer" class="container col-sm-12"  data-spy="scroll" data-target="#myScrollspy" data-offset="30">
+	</div>
+</main>
 
 	<script src="js/jquery-3.3.1.js"></script>
 	<script src="js/bootstrap.js"></script>
