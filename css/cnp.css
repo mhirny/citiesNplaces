@@ -33,6 +33,26 @@ header {
 	//padding:0px;
 	//margin: 0px;
 }
+footer {
+  position: absolute;
+  bottom: 0px;
+  background-color: #f1f1f1;
+  padding-top: 5px;
+  border: 10px;
+  height: 80px;
+}
+/* home */
+.mostPopular-name {
+  padding-top:3px !important;
+  padding-bottom: 3px !important;
+}
+.mostPopular-body {
+  padding: 3px 3px 3px 3px !important;
+}
+.mostPopular-body img {
+  width:100%;
+  height:100%;
+}
 	/* side nav */
 .fixedPos {
 	position: fixed;
@@ -51,11 +71,14 @@ ul.wideList > li {
 	/* loaded content information section */
 .lightBG {
 	background-color: white;
+  padding: 5px 0 5px 0;
 }
 .loadedContentSection {
 	min-height: 350px !important;
 	background-color: #f1f1f1;
-	margin-top: 10px;
+	margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
 }
 .loadedContentSection > .image {
 	float:left;

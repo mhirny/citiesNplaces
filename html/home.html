@@ -1,8 +1,10 @@
-<div class = "container lightBG" style="height: 100%">
+<div class = "container lightBG" style="min-height: 100%; padding-bottom: 80px;">
 	<div class = "row" >
 		<div class = "col-xs-0 col-sm-1 col-md-2"></div>
 		<div class = "col-xs-12 col-sm-10 col-md-8">
-			<br>
+
+      <h1 class="text-center">Welcome to CIties & Places!</h1>
+      <hr>
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -81,28 +83,62 @@
 	</div>
 	
 	<div class = "row">
+  <br>
 		<div class = "col-sm-2"></div>
-		<div class = "col-sm-8">
-			<p>This is some text content ble ble bele</p>
-			<p>2nd paragraph skflshfshf</p>
-			<br>
-			<input type="text">zzzzz
-			<p> 3rd paragraph</p>
-			<p>testowe znadnie sprawdzajace cz pojedyncza litera jak <span style="display:inline-block">i moze</span> byc zmuszona do nie pokazywania sie na koncu lini <span style="display:inline-block">w przegladarce</span> <span style="display:inline-block">i gdzies</span> tam <span style="display:inline-block">z tegotam</span> <span style="display:inline-block">w tymtamteż</span>
-			</p>
+		<div class = "col-sm-8 ">
+			<p class="text-center">Planing a trip?</p>
+			<p class="text-center">Here you can read about most beautiful places you can visit in europe!</p>
+      <hr>
+			<p>This week most popular:</p>
+      
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-heading mostPopular-name">Wroclaw
+          </div>
+          <div class="panel-body mostPopular-body">
+            <a href="html/wroclaw.html">
+              <img src="img/wroclaw_main.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-heading mostPopular-name">Paris
+          </div>
+          <div class="panel-body mostPopular-body">
+            <a href = "html/paris.html">
+              <img src="img/paris_main.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+      
+       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <div class="panel panel-default">
+          <div class="panel-heading mostPopular-name">Prague
+          </div>
+          <div class="panel-body mostPopular-body">
+            <a href = "html/prague.html">
+              <img src="img/prague_main.jpg">
+             </a>
+          </div>
+        </div>
+      </div>
+      
 		</div>
 		<div class = "col-sm-2"></div>
 	</div>
-</div>
 
-<script>
-	$(".carousel-inner > .item > a").on("click", function( event ){
-		//event.preventDefault();
-		//event.stopPropagation();
-//alert( $(this).attr("href") );
-//console.log("here: " + $(this).attr("href") );
-//		$("#contentContainer").load( $(this).attr("href") );
-		zmiana( this, event );
-	});
-	 $("#myCarousel").carousel("cycle");
-</script>
+
+  <footer class="page-footer navbar-fixed-bottom navbar-inverse container">
+    <div class="col-md-12 col-lg-12 ">
+      <p class="text-center bg-danger"><b>Important notes! :</b><br>
+                Images and text content on this web page are used without authors permissions or knowledge. Please use only as inside demo.
+      </p>
+      <p class="text-center" style="color: white">© 2018 Copyright: M.Hirny </p>
+    </div>
+  </footer>
+
+</div>
