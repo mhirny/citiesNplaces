@@ -3,6 +3,7 @@ $(document).ready(function () {
     $("#contentContainer").scrollTop( 0 );
     if ( statusTxt == "error" ) {
       alert("Loading Error:\nIf files are on local drive probably your browser don't support cross-origin resource sharing for local html data.\nIn this case please move page data onto server or try using Firefox browser.")
+      throw "Loading error.";
     } else {
       //alert("Images and text content on this web page are used without authors permissions or knowledge. Please use only as inside demo.");
       $("#openHome").addClass("active mySelect");
@@ -34,9 +35,9 @@ function zmiana( fromElem, event ) {
   //history.pushState( null, null, $(fromElem).attr("href") );
 
   $("#contentContainer").load( passedHref, function () {
-    $(this).scrollTop( 1 );
+    $(this).scrollTop( 15 );
     if ( passedHref == "html/home.html" ) {
-openHomeEvents();
+      openHomeEvents();
     }
   });
 }
@@ -49,5 +50,6 @@ function openHomeEvents () {
   $(".carousel-inner > .item > a").on("click", function ( event ) {
     zmiana( this, event );
   });
+  
   $("#myCarousel").carousel("cycle");  
 }

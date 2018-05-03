@@ -1,37 +1,26 @@
 body {
 	overflow-y: hidden;
 }
-header {
-	height: 50px;
-}
 /* header navigation */
 #headerIcon {
 	margin: 5px 15px 5px 0;
 }
 .mySelect {
 	color: white !important;
-	//background-color: gray !important;
-	//text-shadow:5px 5px 2px white !important;
 	text-shadow:3px 3px 4px white, -3px -3px 4px white !important;
 	box-shadow:0px 0px 10px 0px white !important;
 }
 /* loaded content zone */
 #contentWraper {
-	//position: relative;
-	wight: auto;
-	height: calc( 100vh - 50px);
-	top:0px;
-	bottom:0px;
+	widht: auto;
+  height: 100vh;
+  padding-top: 50px; /* top nav bar -- header */
 }
 #contentContainer {
 	position:relative;
 	overflow-y: auto;
 	height: 100%;
 	background-color:black;
-	//top:-20px;
-	//bottom:20px;
-	//padding:0px;
-	//margin: 0px;
 }
 footer {
   position: absolute;
@@ -65,7 +54,6 @@ ul.wideList > li {
 	width: 170px;
 }
 #myScrollspy {
-	//margin-top: 25vh;
 	margin-top: 10px;
 }
 	/* loaded content information section */
@@ -87,6 +75,9 @@ ul.wideList > li {
 .loadedContentSection > .image > img {
 	max-width: 320px;
 	max-height: 320px;
+  height:100%;
+  width:100%;
+  object-fit: scale-down;
 }
 .displayBlock {
 	display: inline-block !important;
